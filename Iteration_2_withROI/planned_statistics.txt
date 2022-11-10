@@ -1,0 +1,24 @@
+
+
+# the purpose of this document is to lay out what statistical tests will be conducted on output measures. 
+
+1) Output measures of interest
+
+- the absolute time spent interacting with each stimulus per minute
+- the relative proportion of time spent with the novel stimulus in each video
+- the number of interaction bouts per video
+- the mean bout duration per video
+- the mean bout duration when interacting with the novel stimulus per video
+
+2) Coorelations
+
+- One 4-way coorelation matrix for the absolute amount of time spent interacting with any stimulus per video
+- One 4-way coorelation matrix for the relative amount of time spent interacting with the novel stimulus per video
+
+3) Model Comparisons
+
+- Compare each scoring method to gold-standard human scoring by showing the second error per minute graph (instances of certain magnitudes of error)
+
+4) Hypothesis testing
+
+- For each measure of interest, we will conduct a 2-way (or 3-way) ANOVA comparing how measures change between treatment groups, DOT/IOT, and rat sex.
