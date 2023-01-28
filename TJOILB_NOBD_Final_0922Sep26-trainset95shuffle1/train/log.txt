@@ -1,0 +1,578 @@
+2022-12-07 03:06:56 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\Documentation_data-TJOILB_NOBD_Final_0922_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'H:\\DLC Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-12-07 03:11:27 iteration: 1000 loss: 0.0271 lr: 0.005
+2022-12-07 03:14:59 iteration: 2000 loss: 0.0207 lr: 0.005
+2022-12-07 03:18:20 iteration: 3000 loss: 0.0198 lr: 0.005
+2022-12-07 03:21:26 iteration: 4000 loss: 0.0180 lr: 0.005
+2022-12-07 03:24:30 iteration: 5000 loss: 0.0181 lr: 0.005
+2022-12-07 03:27:31 iteration: 6000 loss: 0.0172 lr: 0.005
+2022-12-07 03:30:24 iteration: 7000 loss: 0.0163 lr: 0.005
+2022-12-07 03:33:19 iteration: 8000 loss: 0.0160 lr: 0.005
+2022-12-07 03:36:12 iteration: 9000 loss: 0.0159 lr: 0.005
+2022-12-07 03:39:05 iteration: 10000 loss: 0.0147 lr: 0.005
+2022-12-07 03:41:57 iteration: 11000 loss: 0.0163 lr: 0.02
+2022-12-07 03:44:47 iteration: 12000 loss: 0.0145 lr: 0.02
+2022-12-07 03:47:39 iteration: 13000 loss: 0.0137 lr: 0.02
+2022-12-07 03:50:31 iteration: 14000 loss: 0.0130 lr: 0.02
+2022-12-07 03:53:21 iteration: 15000 loss: 0.0123 lr: 0.02
+2022-12-07 03:56:10 iteration: 16000 loss: 0.0117 lr: 0.02
+2022-12-07 03:58:59 iteration: 17000 loss: 0.0116 lr: 0.02
+2022-12-07 04:01:46 iteration: 18000 loss: 0.0112 lr: 0.02
+2022-12-07 04:04:30 iteration: 19000 loss: 0.0104 lr: 0.02
+2022-12-07 04:07:18 iteration: 20000 loss: 0.0104 lr: 0.02
+2022-12-07 04:10:05 iteration: 21000 loss: 0.0098 lr: 0.02
+2022-12-07 04:12:47 iteration: 22000 loss: 0.0096 lr: 0.02
+2022-12-07 04:15:28 iteration: 23000 loss: 0.0095 lr: 0.02
+2022-12-07 04:18:10 iteration: 24000 loss: 0.0091 lr: 0.02
+2022-12-07 04:20:55 iteration: 25000 loss: 0.0094 lr: 0.02
+2022-12-07 04:23:36 iteration: 26000 loss: 0.0088 lr: 0.02
+2022-12-07 04:26:20 iteration: 27000 loss: 0.0087 lr: 0.02
+2022-12-07 04:29:03 iteration: 28000 loss: 0.0086 lr: 0.02
+2022-12-07 04:31:44 iteration: 29000 loss: 0.0084 lr: 0.02
+2022-12-07 04:34:26 iteration: 30000 loss: 0.0083 lr: 0.02
+2022-12-07 04:37:07 iteration: 31000 loss: 0.0082 lr: 0.02
+2022-12-07 04:39:48 iteration: 32000 loss: 0.0082 lr: 0.02
+2022-12-07 04:42:28 iteration: 33000 loss: 0.0079 lr: 0.02
+2022-12-07 04:45:08 iteration: 34000 loss: 0.0079 lr: 0.02
+2022-12-07 04:47:49 iteration: 35000 loss: 0.0076 lr: 0.02
+2022-12-07 04:50:32 iteration: 36000 loss: 0.0077 lr: 0.02
+2022-12-07 04:53:18 iteration: 37000 loss: 0.0076 lr: 0.02
+2022-12-07 04:55:59 iteration: 38000 loss: 0.0074 lr: 0.02
+2022-12-07 04:58:43 iteration: 39000 loss: 0.0074 lr: 0.02
+2022-12-07 05:01:23 iteration: 40000 loss: 0.0072 lr: 0.02
+2022-12-07 05:04:07 iteration: 41000 loss: 0.0072 lr: 0.02
+2022-12-07 05:06:46 iteration: 42000 loss: 0.0071 lr: 0.02
+2022-12-07 05:09:27 iteration: 43000 loss: 0.0068 lr: 0.02
+2022-12-07 05:12:09 iteration: 44000 loss: 0.0069 lr: 0.02
+2022-12-07 05:14:52 iteration: 45000 loss: 0.0070 lr: 0.02
+2022-12-07 05:17:31 iteration: 46000 loss: 0.0067 lr: 0.02
+2022-12-07 05:20:14 iteration: 47000 loss: 0.0069 lr: 0.02
+2022-12-07 05:22:58 iteration: 48000 loss: 0.0069 lr: 0.02
+2022-12-07 05:25:37 iteration: 49000 loss: 0.0069 lr: 0.02
+2022-12-07 05:28:17 iteration: 50000 loss: 0.0066 lr: 0.02
+2022-12-07 05:30:58 iteration: 51000 loss: 0.0067 lr: 0.02
+2022-12-07 05:33:41 iteration: 52000 loss: 0.0065 lr: 0.02
+2022-12-07 05:36:25 iteration: 53000 loss: 0.0066 lr: 0.02
+2022-12-07 05:39:03 iteration: 54000 loss: 0.0063 lr: 0.02
+2022-12-07 05:41:45 iteration: 55000 loss: 0.0064 lr: 0.02
+2022-12-07 05:44:25 iteration: 56000 loss: 0.0065 lr: 0.02
+2022-12-07 05:47:07 iteration: 57000 loss: 0.0065 lr: 0.02
+2022-12-07 05:49:49 iteration: 58000 loss: 0.0063 lr: 0.02
+2022-12-07 05:52:28 iteration: 59000 loss: 0.0061 lr: 0.02
+2022-12-07 05:55:06 iteration: 60000 loss: 0.0060 lr: 0.02
+2022-12-07 05:57:49 iteration: 61000 loss: 0.0062 lr: 0.02
+2022-12-07 06:00:33 iteration: 62000 loss: 0.0063 lr: 0.02
+2022-12-07 06:03:18 iteration: 63000 loss: 0.0061 lr: 0.02
+2022-12-07 06:05:59 iteration: 64000 loss: 0.0060 lr: 0.02
+2022-12-07 06:08:36 iteration: 65000 loss: 0.0058 lr: 0.02
+2022-12-07 06:11:18 iteration: 66000 loss: 0.0061 lr: 0.02
+2022-12-07 06:14:02 iteration: 67000 loss: 0.0059 lr: 0.02
+2022-12-07 06:16:44 iteration: 68000 loss: 0.0059 lr: 0.02
+2022-12-07 06:19:25 iteration: 69000 loss: 0.0059 lr: 0.02
+2022-12-07 06:22:03 iteration: 70000 loss: 0.0058 lr: 0.02
+2022-12-07 06:24:42 iteration: 71000 loss: 0.0058 lr: 0.02
+2022-12-07 06:27:22 iteration: 72000 loss: 0.0058 lr: 0.02
+2022-12-07 06:30:07 iteration: 73000 loss: 0.0059 lr: 0.02
+2022-12-07 06:32:47 iteration: 74000 loss: 0.0056 lr: 0.02
+2022-12-07 06:35:28 iteration: 75000 loss: 0.0056 lr: 0.02
+2022-12-07 06:38:12 iteration: 76000 loss: 0.0057 lr: 0.02
+2022-12-07 06:40:52 iteration: 77000 loss: 0.0055 lr: 0.02
+2022-12-07 06:43:30 iteration: 78000 loss: 0.0055 lr: 0.02
+2022-12-07 06:46:08 iteration: 79000 loss: 0.0053 lr: 0.02
+2022-12-07 06:48:49 iteration: 80000 loss: 0.0054 lr: 0.02
+2022-12-07 06:51:30 iteration: 81000 loss: 0.0053 lr: 0.02
+2022-12-07 06:54:10 iteration: 82000 loss: 0.0055 lr: 0.02
+2022-12-07 06:56:55 iteration: 83000 loss: 0.0055 lr: 0.02
+2022-12-07 06:59:40 iteration: 84000 loss: 0.0055 lr: 0.02
+2022-12-07 07:02:20 iteration: 85000 loss: 0.0053 lr: 0.02
+2022-12-07 07:05:06 iteration: 86000 loss: 0.0054 lr: 0.02
+2022-12-07 07:07:49 iteration: 87000 loss: 0.0053 lr: 0.02
+2022-12-07 07:10:29 iteration: 88000 loss: 0.0051 lr: 0.02
+2022-12-07 07:13:08 iteration: 89000 loss: 0.0052 lr: 0.02
+2022-12-07 07:15:52 iteration: 90000 loss: 0.0052 lr: 0.02
+2022-12-07 07:18:32 iteration: 91000 loss: 0.0053 lr: 0.02
+2022-12-07 07:21:13 iteration: 92000 loss: 0.0052 lr: 0.02
+2022-12-07 07:23:54 iteration: 93000 loss: 0.0052 lr: 0.02
+2022-12-07 07:26:34 iteration: 94000 loss: 0.0050 lr: 0.02
+2022-12-07 07:29:17 iteration: 95000 loss: 0.0051 lr: 0.02
+2022-12-07 07:31:58 iteration: 96000 loss: 0.0051 lr: 0.02
+2022-12-07 07:34:43 iteration: 97000 loss: 0.0051 lr: 0.02
+2022-12-07 07:37:24 iteration: 98000 loss: 0.0051 lr: 0.02
+2022-12-07 07:40:01 iteration: 99000 loss: 0.0051 lr: 0.02
+2022-12-07 07:42:40 iteration: 100000 loss: 0.0052 lr: 0.02
+2022-12-07 07:45:20 iteration: 101000 loss: 0.0049 lr: 0.02
+2022-12-07 07:48:03 iteration: 102000 loss: 0.0051 lr: 0.02
+2022-12-07 07:50:41 iteration: 103000 loss: 0.0051 lr: 0.02
+2022-12-07 07:53:21 iteration: 104000 loss: 0.0048 lr: 0.02
+2022-12-07 07:55:58 iteration: 105000 loss: 0.0050 lr: 0.02
+2022-12-07 07:58:36 iteration: 106000 loss: 0.0049 lr: 0.02
+2022-12-07 08:01:15 iteration: 107000 loss: 0.0048 lr: 0.02
+2022-12-07 08:03:52 iteration: 108000 loss: 0.0049 lr: 0.02
+2022-12-07 08:06:34 iteration: 109000 loss: 0.0049 lr: 0.02
+2022-12-07 08:09:18 iteration: 110000 loss: 0.0048 lr: 0.02
+2022-12-07 08:12:01 iteration: 111000 loss: 0.0048 lr: 0.02
+2022-12-07 08:14:42 iteration: 112000 loss: 0.0046 lr: 0.02
+2022-12-07 08:17:21 iteration: 113000 loss: 0.0047 lr: 0.02
+2022-12-07 08:20:06 iteration: 114000 loss: 0.0048 lr: 0.02
+2022-12-07 08:22:47 iteration: 115000 loss: 0.0047 lr: 0.02
+2022-12-07 08:25:22 iteration: 116000 loss: 0.0047 lr: 0.02
+2022-12-07 08:28:04 iteration: 117000 loss: 0.0048 lr: 0.02
+2022-12-07 08:30:42 iteration: 118000 loss: 0.0047 lr: 0.02
+2022-12-07 08:33:21 iteration: 119000 loss: 0.0046 lr: 0.02
+2022-12-07 08:36:00 iteration: 120000 loss: 0.0047 lr: 0.02
+2022-12-07 08:38:37 iteration: 121000 loss: 0.0045 lr: 0.02
+2022-12-07 08:41:20 iteration: 122000 loss: 0.0046 lr: 0.02
+2022-12-07 08:43:58 iteration: 123000 loss: 0.0045 lr: 0.02
+2022-12-07 08:46:40 iteration: 124000 loss: 0.0047 lr: 0.02
+2022-12-07 08:49:18 iteration: 125000 loss: 0.0046 lr: 0.02
+2022-12-07 08:51:59 iteration: 126000 loss: 0.0046 lr: 0.02
+2022-12-07 08:54:41 iteration: 127000 loss: 0.0045 lr: 0.02
+2022-12-07 08:57:21 iteration: 128000 loss: 0.0044 lr: 0.02
+2022-12-07 09:00:00 iteration: 129000 loss: 0.0044 lr: 0.02
+2022-12-07 09:02:43 iteration: 130000 loss: 0.0044 lr: 0.02
+2022-12-07 09:05:22 iteration: 131000 loss: 0.0044 lr: 0.02
+2022-12-07 09:08:03 iteration: 132000 loss: 0.0044 lr: 0.02
+2022-12-07 09:10:46 iteration: 133000 loss: 0.0045 lr: 0.02
+2022-12-07 09:13:26 iteration: 134000 loss: 0.0045 lr: 0.02
+2022-12-07 09:16:06 iteration: 135000 loss: 0.0044 lr: 0.02
+2022-12-07 09:18:46 iteration: 136000 loss: 0.0043 lr: 0.02
+2022-12-07 09:21:28 iteration: 137000 loss: 0.0043 lr: 0.02
+2022-12-07 09:24:08 iteration: 138000 loss: 0.0043 lr: 0.02
+2022-12-07 09:26:46 iteration: 139000 loss: 0.0043 lr: 0.02
+2022-12-07 09:29:27 iteration: 140000 loss: 0.0043 lr: 0.02
+2022-12-07 09:32:07 iteration: 141000 loss: 0.0042 lr: 0.02
+2022-12-07 09:34:51 iteration: 142000 loss: 0.0042 lr: 0.02
+2022-12-07 09:37:29 iteration: 143000 loss: 0.0044 lr: 0.02
+2022-12-07 09:40:09 iteration: 144000 loss: 0.0041 lr: 0.02
+2022-12-07 09:42:49 iteration: 145000 loss: 0.0042 lr: 0.02
+2022-12-07 09:45:30 iteration: 146000 loss: 0.0042 lr: 0.02
+2022-12-07 09:48:11 iteration: 147000 loss: 0.0043 lr: 0.02
+2022-12-07 09:50:47 iteration: 148000 loss: 0.0042 lr: 0.02
+2022-12-07 09:53:27 iteration: 149000 loss: 0.0041 lr: 0.02
+2022-12-07 09:56:07 iteration: 150000 loss: 0.0041 lr: 0.02
+2022-12-07 09:58:48 iteration: 151000 loss: 0.0041 lr: 0.02
+2022-12-07 10:01:28 iteration: 152000 loss: 0.0042 lr: 0.02
+2022-12-07 10:04:10 iteration: 153000 loss: 0.0041 lr: 0.02
+2022-12-07 10:06:49 iteration: 154000 loss: 0.0041 lr: 0.02
+2022-12-07 10:09:30 iteration: 155000 loss: 0.0040 lr: 0.02
+2022-12-07 10:12:11 iteration: 156000 loss: 0.0042 lr: 0.02
+2022-12-07 10:14:52 iteration: 157000 loss: 0.0041 lr: 0.02
+2022-12-07 10:17:29 iteration: 158000 loss: 0.0041 lr: 0.02
+2022-12-07 10:20:07 iteration: 159000 loss: 0.0040 lr: 0.02
+2022-12-07 10:22:52 iteration: 160000 loss: 0.0041 lr: 0.02
+2022-12-07 10:25:29 iteration: 161000 loss: 0.0040 lr: 0.02
+2022-12-07 10:28:11 iteration: 162000 loss: 0.0041 lr: 0.02
+2022-12-07 10:30:47 iteration: 163000 loss: 0.0041 lr: 0.02
+2022-12-07 10:33:25 iteration: 164000 loss: 0.0041 lr: 0.02
+2022-12-07 10:36:07 iteration: 165000 loss: 0.0042 lr: 0.02
+2022-12-07 10:38:46 iteration: 166000 loss: 0.0040 lr: 0.02
+2022-12-07 10:41:29 iteration: 167000 loss: 0.0040 lr: 0.02
+2022-12-07 10:44:06 iteration: 168000 loss: 0.0039 lr: 0.02
+2022-12-07 10:46:45 iteration: 169000 loss: 0.0041 lr: 0.02
+2022-12-07 10:49:24 iteration: 170000 loss: 0.0040 lr: 0.02
+2022-12-07 10:52:05 iteration: 171000 loss: 0.0040 lr: 0.02
+2022-12-07 10:54:43 iteration: 172000 loss: 0.0039 lr: 0.02
+2022-12-07 10:57:22 iteration: 173000 loss: 0.0038 lr: 0.02
+2022-12-07 10:59:58 iteration: 174000 loss: 0.0040 lr: 0.02
+2022-12-07 11:02:34 iteration: 175000 loss: 0.0039 lr: 0.02
+2022-12-07 11:05:11 iteration: 176000 loss: 0.0039 lr: 0.02
+2022-12-07 11:07:50 iteration: 177000 loss: 0.0039 lr: 0.02
+2022-12-07 11:10:29 iteration: 178000 loss: 0.0038 lr: 0.02
+2022-12-07 11:13:11 iteration: 179000 loss: 0.0039 lr: 0.02
+2022-12-07 11:15:52 iteration: 180000 loss: 0.0038 lr: 0.02
+2022-12-07 11:18:36 iteration: 181000 loss: 0.0039 lr: 0.02
+2022-12-07 11:21:15 iteration: 182000 loss: 0.0039 lr: 0.02
+2022-12-07 11:23:57 iteration: 183000 loss: 0.0039 lr: 0.02
+2022-12-07 11:26:39 iteration: 184000 loss: 0.0038 lr: 0.02
+2022-12-07 11:29:16 iteration: 185000 loss: 0.0037 lr: 0.02
+2022-12-07 11:31:56 iteration: 186000 loss: 0.0039 lr: 0.02
+2022-12-07 11:34:38 iteration: 187000 loss: 0.0038 lr: 0.02
+2022-12-07 11:37:16 iteration: 188000 loss: 0.0037 lr: 0.02
+2022-12-07 11:39:54 iteration: 189000 loss: 0.0038 lr: 0.02
+2022-12-07 11:42:37 iteration: 190000 loss: 0.0038 lr: 0.02
+2022-12-07 11:45:16 iteration: 191000 loss: 0.0039 lr: 0.02
+2022-12-07 11:47:53 iteration: 192000 loss: 0.0037 lr: 0.02
+2022-12-07 11:50:31 iteration: 193000 loss: 0.0038 lr: 0.02
+2022-12-07 11:53:10 iteration: 194000 loss: 0.0037 lr: 0.02
+2022-12-07 11:55:52 iteration: 195000 loss: 0.0037 lr: 0.02
+2022-12-07 11:58:31 iteration: 196000 loss: 0.0038 lr: 0.02
+2022-12-07 12:01:06 iteration: 197000 loss: 0.0037 lr: 0.02
+2022-12-07 12:03:44 iteration: 198000 loss: 0.0038 lr: 0.02
+2022-12-07 12:06:26 iteration: 199000 loss: 0.0038 lr: 0.02
+2022-12-07 12:09:03 iteration: 200000 loss: 0.0038 lr: 0.02
+2022-12-07 23:21:29 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-12-07 23:36:23 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-27 23:05:19 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\Documentation_data-TJOILB_NOBD_Final_0922_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'H:\\DLC Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-27 23:28:20 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\Documentation_data-TJOILB_NOBD_Final_0922_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'H:\\DLC Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-28 04:10:51 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7]],
+ 'all_joints_names': ['ear_left',
+                      'ear_right',
+                      'nose',
+                      'center',
+                      'lateral_left',
+                      'lateral_right',
+                      'tail_base',
+                      'tail_ end'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\TJOILB_NOBD_Final_0922_Tim95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\ProgramData\\Miniconda3\\envs\\DLP_aaron_house\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-2\\UnaugmentedDataSet_TJOILB_NOBD_Final_0922Sep26\\Documentation_data-TJOILB_NOBD_Final_0922_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 8,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'H:\\DLC Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'H:\\DLC '
+                    'Networks\\TJOILB_NOBD_Final_0922-Tim-2022-09-26\\dlc-models\\iteration-2\\TJOILB_NOBD_Final_0922Sep26-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
